@@ -2,6 +2,8 @@
 
 from random import randint, randrange
 import tkinter as tk
+from tkinter import *
+from PIL import Image, ImageTk
 
 WIDTH, HEIGHT = 450, 380
 DT = 0.2
@@ -44,6 +46,7 @@ class Ball:
         return squared_distance <= self.radius**2
 
 
+
 # ======== Control and View ========
 def canvas_click_handler(event):
     global scores, balls
@@ -78,6 +81,8 @@ def next_frame_job(n):
 def initilization():
     global root, canvas, scores, scores_label, balls
     root = tk.Tk()
+    root.title("Поймай меня")
+    root.iconbitmap('Logotype.ico')
     # создаём холст:
     canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH,
                        background="lightblue", border=3)
@@ -96,6 +101,7 @@ def initilization():
     # привязка событий:
     canvas.bind("<Button-1>", canvas_click_handler)
     canvas.after(2000, next_frame_job, 1)
+
 
 def main():
     initilization()

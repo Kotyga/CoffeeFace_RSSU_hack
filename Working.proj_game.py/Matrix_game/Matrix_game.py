@@ -45,10 +45,11 @@ def main():
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
+    pygame.display.set_icon(pygame.image.load("Logotype.ico"))
 
     mousex = 0
     mousey = 0
-    pygame.display.set_caption('Memory Game')
+    pygame.display.set_caption('Найди пару')
 
     mainBoard = getRandomizedBoard()
     revealedBoxes = generateRevealedBoxesData(False)

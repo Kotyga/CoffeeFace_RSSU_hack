@@ -4,6 +4,7 @@ from tkinter import messagebox
 from random import randrange
 import random
 import string
+from PIL import Image, ImageTk
 
 def generate_random_num():
     return randrange(10, 21, 1)
@@ -17,7 +18,8 @@ r_s = generate_random_string(generate_random_num())
 def show_message():
     messagebox.showinfo("Помни меня", "Верно!" if message.get() == r_s else "Попробуй ещё :)")
           
-root = Tk()
+root = tk.Tk()
+
 root.title("Помни меня")
 root.geometry("300x250")
  
@@ -30,6 +32,7 @@ message_button = Button(text = "Введи без ошибок: \n" + r_s, comma
 message_button.pack()
 message_button.place(relx=.5, rely=.5, anchor="c")
 
+root.iconbitmap('Logotype.ico')
 root.mainloop()
 
 print(message.get()[0])
