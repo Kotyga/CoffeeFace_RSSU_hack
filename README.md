@@ -8,9 +8,11 @@
 ![avatar](https://github.com/Kotyga/CoffeeFace_RSSU_hack/blob/Kotyga_MM/Screen/Button.jpg)
 ## Правильно введи текст
 ![avatar](https://github.com/Kotyga/CoffeeFace_RSSU_hack/blob/Kotyga_MM/Screen/Genereate.jpg)
+## Матрица памяти
+![avatar](https://github.com/Kotyga/CoffeeFace_RSSU_hack/blob/Kotyga_MM/Screen/Memory%20matrix.jpg)
 
 # Сложность:
 
-|   Найди пару  | Поймай мячик  | Скрыть все кнопки  | Правильно введи текст  |
-|:-------------:|:-------------:|:------------------:|:----------------------:|
-|       C       |       A       |          A         |             B          |
+|   Найди пару  | Поймай мячик  | Скрыть все кнопки  | Правильно введи текст  |   Матрица памяти  |
+|:-------------:|:-------------:|:------------------:|:----------------------:|:-----------------:|
+|       C       |       A       |          A         |             B          |           B       |
