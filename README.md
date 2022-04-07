@@ -10,9 +10,11 @@
 ![avatar](https://github.com/Kotyga/CoffeeFace_RSSU_hack/blob/Kotyga_MM/Screen/Genereate.jpg)
 ## Матрица памяти
 ![avatar](https://github.com/Kotyga/CoffeeFace_RSSU_hack/blob/Kotyga_MM/Screen/Memory%20matrix.jpg)
+## Пятнашки
+![avatar](https://github.com/Kotyga/CoffeeFace_RSSU_hack/blob/Kotyga_MM/Screen/Tag%20game.jpg)
 
 # Сложность:
 
-|   Найди пару  | Поймай мячик  | Скрыть все кнопки  | Правильно введи текст  |   Матрица памяти  |
-|:-------------:|:-------------:|:------------------:|:----------------------:|:-----------------:|
-|       C       |       A       |          A         |             B          |           B       |
+|   Найди пару  | Поймай мячик  | Скрыть все кнопки  | Правильно введи текст  |   Матрица памяти  |  Пятнашки  |
+|:-------------:|:-------------:|:------------------:|:----------------------:|:-----------------:|:----------:|
+|       C       |       A       |          A         |             B          |           B       |      C     |
