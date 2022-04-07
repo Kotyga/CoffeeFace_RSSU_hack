@@ -4,7 +4,6 @@ from tkinter import messagebox
 from random import randrange
 import random
 import string
-from PIL import Image, ImageTk
 
 def generate_random_num():
     return randrange(10, 21, 1)

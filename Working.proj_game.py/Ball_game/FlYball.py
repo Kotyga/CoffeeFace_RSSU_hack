@@ -3,7 +3,6 @@
 from random import randint, randrange
 import tkinter as tk
 from tkinter import *
-from PIL import Image, ImageTk
 
 WIDTH, HEIGHT = 450, 380
 DT = 0.2
