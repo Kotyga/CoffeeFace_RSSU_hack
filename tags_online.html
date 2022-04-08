@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memo: Крестики-Нолики</title>
+    <title>Memo: Поймай мячик</title>
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -24,7 +24,7 @@
                 <a href="index.html" class="menu__logotype"><img src="icons/logotype/logotype.svg" alt="Logo"
                         width="150" height="150"></a>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="news.html">Мозголомка</a></li>
+                    <li class="menu__link"><a href="news.html">Новости</a></li>
                     <li class="menu__link"><a href="game.html">Игры</a></li>
                 </ul>
             </nav>
@@ -47,29 +47,55 @@
 
     <section class="main" style="margin-top:20px">
         <div class="main__title" style="font-size: 70px; position: relative; text-align: center;">
-            Крестики-Нолики
+            Пятнашки
         </div>
         <div class="main__illustration"
             style="margin-top: 30px; -webkit-box-align: center; align-items: center; text-align: center;">
-            <img src="img/games/tic_tac_toe.png" alt="Find a couple" class="main__illustration__img" width="300">
+            <img src="img/games/tags_online.png" alt="Find a couple" class="main__illustration__img" width="400">
             <p class="main__illustration__title" style="font-size: 20px; margin-top: 30px; font-weight: bold">
-                Платформа: Онлайн
+                Платформа: Компьютер
             </p>
             <p class="main__illustration descr" style="padding: 0 72px 12px 82px; text-align: start; font-size: 20px;">
-                Игроки по очереди ставят на свободные клетки поля 3×3 знаки (один всегда крестики, другой всегда
-                нолики). Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или диагонали, выигрывает.
-                Первый ход делает игрок, ставящий крестики.
+                Как и в настоящих пятнашках, в этих пятнашках можно переставлять любой элемент на свободное место. Но
+                я надеюсь на вашу честность. Ведь в этой игре жульничество не принесет никакого удовлетворения, т.к
+                смысл пятнашек совсем в другом.
+                <br><br>
+                Чтобы начать играть введите желаемый размер игрового поля и нажмите кнопку "Новая игра". После этого
+                появится
+                поле, фишки на котором можно перетаскивать с помощью мыши.
             </p>
         </div>
     </section>
 
+
+
+    <div id="tags_field">
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="dragStart(event)"></div>
+        <div class="tag" draggable="true" ondragstart="return dragStart(event)"></div>
+        <div class="square--epmpty" id="square_epmpty" ondragenter=" dragEnter(event)" ondrop=" dragDrop(event)"
+            ondragover=" dragOver(event)">&nbsp</div>
+    </div>
+
+
+
     <section class="download" style="padding-top: 10px;">
-        <div class="download__title" style="font-size: 30px; position: relative; text-align: center;">Сыграйте уже
-            сейчас!
-        </div>
+        <div class="download__title" style="font-size: 30px; position: relative; text-align: center;">Вы также можете ее скачать!</div>
         <div class="download__btn btn middle"
             style="margin-top: 50px; font-size: 17px; width: 230px; text-decoration: none; text-align: center;  background-color: #57c595; color: #fff; border: 0px; border-radius: 23px; padding: 10px 0px; cursor: pointer;">
-            <a href="tic_tac_toe.html" style="text-decoration: none; color: #fff; font-size: 25px;">Играть!</a>
+            <a href="tags.html" style="text-decoration: none; color: #fff; font-size: 25px;">Скачать</a>
         </div>
     </section>
 
@@ -83,6 +109,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/tags.js"></script>
     <script>
         (function (d) {
             var s = d.createElement("script");
